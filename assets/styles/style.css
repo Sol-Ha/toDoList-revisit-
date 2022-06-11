@@ -4,6 +4,8 @@
     --color-text-black : black;
     --color-text-blue : #95AED0;
     --color-button-blue : #ACC2DF;
+    --color-light-grey : #D9D9D9;
+    --color-warning : red;
 }
 
 *{
@@ -77,6 +79,7 @@ body{
 /* desktop index*/
 
 @media screen and (min-width: 900px) {
+    
     #indexMain_div_article{
         display: flex;
         flex-direction: row;
@@ -86,5 +89,138 @@ body{
         font-size: 1em;
         padding: 3%;
         margin-block: 10%;
+    }
+}
+
+/* header for login and signup located in "includes */
+#php_sign_login{
+    width: 100%;
+    height: 30%;
+}
+
+#php_sign_login #logo{
+    position: relative;
+}
+
+#php_sign_login #icon_sun{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+}
+
+#php_sign_login #icon_moon{
+    display: none;
+    cursor: pointer;
+}
+
+/* login and signup php form files*/
+
+.main_loginANDsignup{
+    width: 100%;
+    height: 27em;
+    margin-top: -2em;
+    border-block: 0.1em solid var(--color-light-grey);
+    display: flex;
+    flex-direction: row;
+/* mangle header */
+    position: relative;
+}
+
+.line{
+    border-left: 2em solid var(--color-button-blue);
+    height: 26.8em;
+    display: block;
+}
+
+form{
+    margin: 1em 3em 1em 3em ;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+form h1{
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    display: block;
+}
+
+form p{
+    display: block;
+    color: var(--color-warning);
+    margin-block: 1em;
+}
+
+form label{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+form input{
+    margin-bottom: 1.3em;
+    background-color: rgba(255, 255, 255, 0.547)!important;
+    border: 0.1em solid var(--color-light-grey) !important;
+    border-radius: 0 !important;
+}
+
+form button{
+    width: 60%;
+    background-color: var(--color-button-blue)!important;
+    border: 0.08em solid var(--color-text-black) !important;
+    border-radius: 0% !important;
+    box-shadow: 0px 5px 10px -4px var(--color-background-dark); 
+    align-self: center;
+}
+
+/* footer */
+footer{
+    text-align: center;
+}
+
+footer h2{
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+footer a{
+    font-size: 1.1em;
+    color: var(--color-text-blue);
+    display: block;
+}
+
+/* desktop login and signup php form files*/
+@media screen and (min-width: 900px) {
+    
+    .main_loginANDsignup{
+        width: 100%;
+        height: 26em;
+        margin-top: -2em;
+        border-block: 0.1em solid var(--color-light-grey);
+        display: flex;
+        flex-direction: row;
+    /* mangle header */
+        position: relative;
+    }
+    
+    .line{
+        border-left: 2em solid var(--color-button-blue);
+        height: 25.8em;
+        display: block;
+    }
+    
+    form{
+        width: 50%;
+        margin-inline: 20em;
+    }
+    
+    form h1{
+        margin-bottom: 1em;
+    }
+    
+
+    form button{
+        width: 50%;
     }
 }
