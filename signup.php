@@ -9,10 +9,47 @@ interrogating your database -->
 <?php include "includes/head.php";?>
 <body>
 
-<!-- reduce space by picking the corresponding file in "includes" -->
-<?php include "includes/header.php";?>
+    <!-- reduce space by picking the corresponding file in "includes" -->
+    <?php include "includes/header.php"; ?>
 
-<!-- pick the error message from the right action file -->
-<?php if(isset($errorMsg)) {echo "<p>".$errorMsg."</p>";}?>
+
+    <main class="main_signup">
+        <div class="line"></div>
+        <form>
+            <h1>Connection</h1>
+
+            <!-- pick the error message from the right action file -->
+            <?php if (isset($errorMsg)) {
+                echo "<p>" . $errorMsg . "</p>";
+            } ?>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nom</label>
+                <input type="text" class="form-control" name="lastName">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Prénom</label>
+                <input type="text" class="form-control" name="firstName">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                <input type="text" class="form-control" name="mail">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Pseudo</label>
+                <input type="text" class="form-control" name="pseudo">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
+                <input type="password" class="form-control" name="password">
+            </div>
+            <button type="submit" class="btn" name="validate">S'inscrire</button>
+        </form>
+    </main>
+
+    <footer>
+        <h2>Vous possédez déjà un compte? </h2>
+        <a href="login.php">Cliquez ici</a>
+    </footer>
 </body>
+
 </html>

@@ -14,7 +14,7 @@ interrogating your database -->
     <?php include "includes/header.php"; ?>
 
 
-    <main class="main_loginANDsignup">
+    <main class="main_login">
         <div class="line"></div>
         <form>
             <h1>Connection</h1>
