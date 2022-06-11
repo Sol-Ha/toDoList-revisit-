@@ -1,0 +1,90 @@
+:root{
+    --color-background-white : white;
+    --color-background-dark : #463F3F;
+    --color-text-black : black;
+    --color-text-blue : #95AED0;
+    --color-button-blue : #ACC2DF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+/* index file */
+/* header */
+#indexHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+#indexHeader #logo{
+    position: relative;
+}
+
+#indexHeader #icon_sun{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+}
+
+#indexHeader #icon_moon{
+    display: none;
+    cursor: pointer;
+}
+/* main */
+
+#indexMain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#indexMain h1{
+    font-size: 1em;
+    text-align: center;
+    display: block;
+}
+
+.indexMain_article{
+    font-size: 1em;
+    padding: 3%;
+    margin: 15% 15% 5% 15%;
+    border: 0.03em dashed var(--color-text-black);
+    text-align: center;
+}
+
+.indexMain_article h2{
+    font-size: 1em;
+    margin-block: 8%;
+}
+
+.indexMain_article a{
+    font-size: 1.1em;
+    margin-block: 8%;
+    color: var(--color-text-blue);
+    display: block;
+}
+
+/* desktop index*/
+
+@media screen and (min-width: 900px) {
+    #indexMain_div_article{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .indexMain_article{
+        font-size: 1em;
+        padding: 3%;
+        margin-block: 10%;
+    }
+}
