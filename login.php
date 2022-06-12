@@ -16,7 +16,7 @@ interrogating your database -->
 
     <main class="main_login">
         <div class="line"></div>
-        <form>
+        <form method="POST">
             <h1>Connection</h1>
 
             <!-- pick the error message from the right action file -->
@@ -25,13 +25,13 @@ interrogating your database -->
             } ?>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Pseudo</label>
-                <input type="email" class="form-control" name="pseudo">
+                <input type="text" class="form-control" name="pseudo">
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
                 <input type="password" class="form-control" name="password">
             </div>
-            <button type="submit" class="btn" name="validate">Se connecter</button>
+            <button type="submit" class="form_btn" name="validate">Se connecter</button>
         </form>
     </main>
 
