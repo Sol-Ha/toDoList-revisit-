@@ -109,23 +109,23 @@ body {
 }
 
 /* header for login and signup located in "includes */
-#php_sign_login {
+#header_login {
     width: 100%;
     height: 30%;
 }
 
-#php_sign_login #logo {
+#header_login #logo {
     position: relative;
 }
 
-#php_sign_login #icon_sun {
+#icon_sun {
     position: absolute;
     right: 5%;
     top: 5%;
     cursor: pointer;
 }
 
-#php_sign_login #icon_moon {
+#icon_moon {
     display: none;
     cursor: pointer;
 }
